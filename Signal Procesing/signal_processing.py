@@ -82,7 +82,7 @@ x_denoise_binary=[0]*len(x_denoise1)
 #for loop for which goes through the channel lists and marks the peaks in binary list; by knowing time stamps and looking at plotted data, the ranges can be adjusted to produce the best results
 for i in range(30000,len(x_denoise1),30000):
     for j in range(i,i+16000,1):
-        x_denoise1_binary[j]=1
+        x_denoise_binary[j]=1
 
 #two functions calls - one for plotting the data and the other for producing the file with the processed data    
 plot_stuff(data1,data2,data3,data4,x_denoise1,x_denoise2,x_denoise3,x_denoise4,x_denoise_binary)
